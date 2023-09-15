@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+@font-face {
+	font-family: 'Mukta';
+	src: url('/fonts/Mukta-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Patua One';
+	src: url('/fonts/PatuaOne-Regular.ttf');
+	font-weight: normal;
+}
+
+/* NOTE: set your target theme name (ex: skeleton, wintry, modern, etc) */
+
+:root [data-theme='skeleton'] {
+	--theme-font-family-base: 'Mukta', sans-serif;
+	--theme-font-family-heading: 'Patua One', sans-serif;
+	/* ... */
+}
+
+:root [data-theme='skeleton'] h1 {
+	@apply font-normal;
+}
+
+:root [data-theme='skeleton'] h2 {
+	@apply font-normal;
+}
+
+:root [data-theme='skeleton'] h3 {
+	@apply font-normal;
+}
+
+:root [data-theme='skeleton'] h4 {
+	@apply font-normal;
+}
+
+:root [data-theme='skeleton'] h5 {
+	@apply font-normal;
+}
+
+:root [data-theme='skeleton'] h5 {
+	@apply font-normal;
+}
+
+:root [data-theme='skeleton'] h6 {
+	@apply font-normal;
+}
