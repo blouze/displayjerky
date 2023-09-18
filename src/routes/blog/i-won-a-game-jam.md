@@ -1,5 +1,5 @@
 ---
-title: I won a game jam and told nobody about it. ¯\_(ツ)_/¯
+title: I won a game jam and told nobody about it.¯\_(ツ)_/¯
 description: Why am I like this...
 img: cat.jpeg
 ---
@@ -97,11 +97,11 @@ To make people want to play your game, it needs to feel like the other games. So
 </h3>
 No need to be a pro at FLStudio to make a good tune for your game in a few hours or less. And no need for endless banks of over-used samples either: just make your own with these freebies:
 
-- [Audacity](https://www.audacityteam.org/), reliable open source sound editor. ***Snip/Snap***.
+***- Snip/Snap*** : [Audacity](https://www.audacityteam.org/), reliable open source sound editor.
 
-- [jsfxr](https://sfxr.me/) is a JavaScript port of **sfxr**, originally created by [Tomas Pettersson](https://www.drpetter.se/), online tool to create 8-bit sounds, from drops to explosions. ***Bleep/Bloop***.
+***- Bleep/Bloop*** : [jsfxr](https://sfxr.me/) is a JavaScript port of **sfxr**, originally created by [Tomas Pettersson](https://www.drpetter.se/), online tool to create 8-bit sounds, from drops to explosions.
 
-- [BeebBox](https://www.beepbox.co/) (and all of its clones, I personally prefer [JummBox](https://jummbus.bitbucket.io/)) is an 8-bit ready online music tracker. ***Boots/Cats***.
+***- Boots/Cats*** : [BeebBox](https://www.beepbox.co/) (and all of its clones, I personally prefer [JummBox](https://jummbus.bitbucket.io/)) is an 8-bit ready online music tracker.
 
 
 <h3 class="h3">

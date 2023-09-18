@@ -1,7 +1,13 @@
 <script lang="ts">
 	import '../app.postcss';
 	import '../styles/animations.scss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import {
+		AppShell,
+		AppBar,
+		initializeStores,
+		Drawer,
+		getDrawerStore
+	} from '@skeletonlabs/skeleton';
 
 	// Highlight JS
 	import hljs from 'highlight.js';
@@ -14,48 +20,44 @@
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
-	import NavBar from '$components/nav_bar.svelte';
+	import Navigation from '$components/navigation.svelte';
+	import Footer from '$components/footer.svelte';
+	import Hamburger from '$components/hamburger.svelte';
+	import Socials from '$components/socials.svelte';
+	import SidebarNavigation from '$components/sidebar_navigation.svelte';
+
+	initializeStores();
+
+	const drawerStore = getDrawerStore();
 </script>
 
 <!-- App Shell -->
-<AppShell>
+<AppShell slotSidebarLeft=" w-0 lg:w-64">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">
-					<img src="/img/logo_white.png" alt="DisplayJerky" />
-				</strong>
-				<NavBar />
+				<a href="/">
+					<strong class="text-xl uppercase">
+						<img src="/img/logo_white.png" alt="DisplayJerky" class="h-10" />
+					</strong>
+				</a>
 			</svelte:fragment>
+			<Navigation />
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
+				<Hamburger on:click={() => drawerStore.open({})} />
+				<div class="hidden lg:flex">
+					<Socials />
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
+	<Drawer>
+		<SidebarNavigation>
+			<Socials />
+		</SidebarNavigation>
+	</Drawer>
 	<!-- Page Route Content -->
 	<slot />
+	<Footer />
 </AppShell>

@@ -3,8 +3,8 @@
 </script>
 
 <div class="container h-full mx-auto flex justify-center">
-	<div class="mt-16 w-1/2 space-y-16">
-		<h1 class="h1">Blog</h1>
+	<div class="mt-16 mx-6 lg:w-1/2 space-y-6">
+		<h1 class="h1">Read</h1>
 
 		<ul class="space-y-6">
 			{#each data.posts as post}
