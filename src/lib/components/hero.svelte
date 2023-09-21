@@ -1,4 +1,4 @@
-<div class="hero min-h-full flex flex-col justify-around">
+<div class="hero flex flex-col justify-around">
 	<div class="hero-overlay" />
 	<div class="hero-content text-center space-y-4 z-20">
 		<slot />

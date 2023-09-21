@@ -21,36 +21,16 @@ body {
 
 /* NOTE: set your target theme name (ex: skeleton, wintry, modern, etc) */
 
-:root [data-theme='skeleton'] {
+:root [data-theme='wintry'] {
 	--theme-font-family-base: 'Mukta', sans-serif;
 	--theme-font-family-heading: 'Patua One', sans-serif;
-	/* ... */
-}
-
-:root [data-theme='skeleton'] h1 {
-	@apply font-normal;
-}
-
-:root [data-theme='skeleton'] h2 {
-	@apply font-normal;
-}
-
-:root [data-theme='skeleton'] h3 {
-	@apply font-normal;
-}
-
-:root [data-theme='skeleton'] h4 {
-	@apply font-normal;
-}
-
-:root [data-theme='skeleton'] h5 {
-	@apply font-normal;
-}
-
-:root [data-theme='skeleton'] h5 {
-	@apply font-normal;
-}
-
-:root [data-theme='skeleton'] h6 {
-	@apply font-normal;
+	
+	h1, h2, h3, h4, h5, h6 {
+		@apply font-normal;
+	}
+	
+	nav {
+		@apply font-heading-token;
+		@apply uppercase;
+	}
 }

@@ -26,10 +26,9 @@ Following the advice of virtually every indie game dev online to anyone willing 
   "Hey, Bill. You still know how to code C#, don't you?"
 </MarkdownImage>
 
+<hr>
 
-<h2 class="h2">
-  Finding a game jam
-</h2>
+<h2 class="h2">Finding a game jam</h2>
 
 It's not straightforward: a quick glance at [itch.io](https://itch.io/jams) shows dozens of options to chose from, each one a community of its own, with various constraints and objectives, and very different levels of experience from participants. Some are featured events everyone wishes they'd win, others are trying their best to become one of those.
 
@@ -41,10 +40,9 @@ First, I wanted to do it all by myself: writing, coding, music, everything.
 
 In the meantime, I had started chatting with an aspiring game developer (I'll call him Stefàn), very creative and visibly unafraid to take on a new challenge. The suggested theme was ***Afterlife*** and he was all about post-apo, the game genre where you play Will Smith and his dog.
 
+<hr>
 
-<h2 class="h2">
-  "Anyway, we started jamming."
-</h2>
+<h2 class="h2">"Anyway, we started jamming."</h2>
 
 As a team, we brainstormed for some time, talked a lot about games, even more about books and films. Pretty soon, the wait was over, and the competition sprite-sheet was submitted to us all. This is half of them:
 
@@ -70,10 +68,9 @@ We were doing it, no matter what. Stefàn and I crafted the story of **Bob**, a 
 
 Oh, and he lost his dog, it's important somehow.
 
+<hr>
 
-<h2 class="h2">
-  Making a game in one week
-</h2>
+<h2 class="h2">Making a game in one week</h2>
 
 It's tough. Like, physically. This won't be the week you start exercising again, Bill.
 
@@ -81,43 +78,34 @@ But I definitely was going to do this, and Stefàn was eager to help. We decided
 
 Preparation being key, in addition to [Godot](https://godotengine.org/), my favorite game engine, I had gathered many tools to quickly draw, animate, make music (that's a whole story for another day...), some I knew already well, others I wanted to try for the occasion.
 
-
-<h3 class="h3">
-  -  Polish
-</h3>
+<h3 class="h3">Polish</h3>
 To make people want to play your game, it needs to feel like the other games. Some features are expected:
 
-<h3 class="h3">
-  -  It should run.
-</h3>
+<h3 class="h3">It should run.</h3>
+
 "Thank you, Captain Hindsight" you could rightfully object. I had the web page hosting the game set to "private" during the whole of the event. What do you think happened? Fortunately, they let me know rapidly my game was not public and I was able to qualify. You worked hard on everything else, don't screw up on technicalities. Check. Double, triple check, and test on different hardware than your own.
 
-<h3 class="h3">
-  -  It should have good sound.
-</h3>
+<h3 class="h3">It should have good sound.</h3>
+
 No need to be a pro at FLStudio to make a good tune for your game in a few hours or less. And no need for endless banks of over-used samples either: just make your own with these freebies:
 
-***- Snip/Snap*** : [Audacity](https://www.audacityteam.org/), reliable open source sound editor.
++ *** Snip/Snap*** : [Audacity](https://www.audacityteam.org/), reliable open source sound editor.
 
-***- Bleep/Bloop*** : [jsfxr](https://sfxr.me/) is a JavaScript port of **sfxr**, originally created by [Tomas Pettersson](https://www.drpetter.se/), online tool to create 8-bit sounds, from drops to explosions.
++ *** Bleep/Bloop*** : [jsfxr](https://sfxr.me/) is a JavaScript port of **sfxr**, originally created by [Tomas Pettersson](https://www.drpetter.se/), online tool to create 8-bit sounds, from drops to explosions.
 
-***- Boots/Cats*** : [BeebBox](https://www.beepbox.co/) (and all of its clones, I personally prefer [JummBox](https://jummbus.bitbucket.io/)) is an 8-bit ready online music tracker.
++ *** Boots/Cats*** : [BeebBox](https://www.beepbox.co/) (and all of its clones, I personally prefer [JummBox](https://jummbus.bitbucket.io/)) is an 8-bit ready online music tracker.
 
+<h3 class="h3">Make nice screens.</h3>
 
-<h3 class="h3">
-  - Make nice screens.
-</h3>
 A game over screen is quick to make and add value to your game. Same can be said for home screen and settings. And last but not least,
 
-<h3 class="h3">
-  - Make that screen s҉h҉a҉a҉a҉a҉a҉k҉e҉ 
-</h3>
+<h3 class="h3">Make that screen s҉h҉a҉a҉a҉a҉a҉k҉e҉ </h3>
+
 I firmly stand behind the following statement: screen-shake brings the most value for the least expense. If your game has no screen-shake, it's not finished.
 
+<hr>
 
-<h2 class="h2">
-  Final thought
-</h2>
+<h2 class="h2">Final thought</h2>
 
 The game came out first! Out of two submissions only, but still.
 
@@ -131,10 +119,9 @@ And make sure there's a dog. That should do it.
   Where are you, Stefàn? We made it.
 </MarkdownImage>
 
+<hr>
 
-<h2 class="h2">
-  Post Scriptum
-</h2>
+<h2 class="h2">Post Scriptum</h2>
 
 > You can play [The Meaning of Afterlife](https://displayjerky.itch.io/meaningofafterlife) right now on itch.io.
 
