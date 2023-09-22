@@ -4,7 +4,7 @@
 
 <section class="relative h-[80vh] shrink-0 flex flex-col items-center justify-center">
 	<video
-		class="absolute w-full h-full object-cover -z-10 brightness-50 saturate-50"
+		class="absolute w-full h-full object-cover -z-10 brightness-50 backdrop-saturate-150"
 		muted
 		autoplay
 		loop
@@ -14,7 +14,7 @@
 	>
 		<source src="/video/puck_cut_sm.mp4" type="video/mp4" />
 	</video>
-	<div class="backdrop-blur-md variant-ghost-surface m-10 p-12 space-y-6 rounded-2xl">
+	<div class="backdrop-blur-sm variant-soft-surface m-10 p-12 space-y-6 rounded-lg">
 		<p class="h1 text-6xl">Quit playing games.</p>
 		<p>Or&nbsp;don't. We're&nbsp;a&nbsp;game&nbsp;studio, not&nbsp;a&nbsp;cop.</p>
 		<button class="btn btn-primary variant-filled-primary">Do something about it</button>

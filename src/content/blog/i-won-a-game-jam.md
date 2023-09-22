@@ -79,13 +79,14 @@ But I definitely was going to do this, and Stefàn was eager to help. We decided
 Preparation being key, in addition to [Godot](https://godotengine.org/), my favorite game engine, I had gathered many tools to quickly draw, animate, make music (that's a whole story for another day...), some I knew already well, others I wanted to try for the occasion.
 
 <h3 class="h3">Polish</h3>
+
 To make people want to play your game, it needs to feel like the other games. Some features are expected:
 
-<h3 class="h3">It should run.</h3>
+<h3 class="h3">It should run</h3>
 
 "Thank you, Captain Hindsight" you could rightfully object. I had the web page hosting the game set to "private" during the whole of the event. What do you think happened? Fortunately, they let me know rapidly my game was not public and I was able to qualify. You worked hard on everything else, don't screw up on technicalities. Check. Double, triple check, and test on different hardware than your own.
 
-<h3 class="h3">It should have good sound.</h3>
+<h3 class="h3">Have good sound</h3>
 
 No need to be a pro at FLStudio to make a good tune for your game in a few hours or less. And no need for endless banks of over-used samples either: just make your own with these freebies:
 
@@ -95,7 +96,7 @@ No need to be a pro at FLStudio to make a good tune for your game in a few hours
 
 + *** Boots/Cats*** : [BeebBox](https://www.beepbox.co/) (and all of its clones, I personally prefer [JummBox](https://jummbus.bitbucket.io/)) is an 8-bit ready online music tracker.
 
-<h3 class="h3">Make nice screens.</h3>
+<h3 class="h3">Make nice screens</h3>
 
 A game over screen is quick to make and add value to your game. Same can be said for home screen and settings. And last but not least,
 

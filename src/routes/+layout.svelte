@@ -26,17 +26,28 @@
 	import Hamburger from '$components/hamburger.svelte';
 	import Socials from '$components/socials.svelte';
 	import SidebarNavigation from '$components/sidebar_navigation.svelte';
+	import Analytics from '$components/analytics.svelte';
 
 	import { afterNavigate, disableScrollHandling } from '$app/navigation';
-	import { page } from '$app/stores';
 
 	import { fade } from 'svelte/transition';
 	import { quadIn, quadOut } from 'svelte/easing';
+
+	import '@beyonk/gdpr-cookie-consent-banner/style.css';
+	import { Banner as GdprBanner } from '@beyonk/gdpr-cookie-consent-banner';
 
 	export let data;
 	$: ({ pathname } = data);
 
 	initializeStores();
+
+	let gdprBanner: GdprBanner;
+	let cookie_consent = false;
+	const initAnalytics = () => {
+		//
+		// gdprBanner.show();
+		cookie_consent = true;
+	};
 
 	const drawerStore = getDrawerStore();
 
@@ -89,3 +100,9 @@
 	{/key}
 	<Footer />
 </AppShell>
+
+<GdprBanner cookieName="gdpr" bind:this={gdprBanner} on:analytics={initAnalytics} />
+
+{#if cookie_consent}
+	<Analytics />
+{/if}
