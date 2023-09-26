@@ -1,28 +1,44 @@
 <script>
+	import { fade } from 'svelte/transition';
+	import { quadIn, quadOut } from 'svelte/easing';
+
+	import DiscordIcon from '$components/icons/discord_icon.svelte';
+	import PostCard from '$components/post_card.svelte';
+	import SketchCard from '$components/sketch_card.svelte';
+	import VideoHero from '$components/video_hero.svelte';
+
 	// import Hero from '$components/hero.svelte';
+	export let data;
 </script>
 
-<section class="relative h-[80vh] shrink-0 flex flex-col items-center justify-center">
-	<video
-		class="absolute w-full h-full object-cover -z-10 brightness-50 backdrop-saturate-150"
-		muted
-		autoplay
-		loop
-		playsinline
-		disablepictureinpicture
-		poster="/video/puck_poster.jpg"
+<VideoHero src="/video/puck_cut_sm.mp4">
+	<p class="h1 text-6xl">Quit playing games.</p>
+	<p>Or&nbsp;don't. We're&nbsp;a&nbsp;game&nbsp;studio, not&nbsp;a&nbsp;cop.</p>
+	<a
+		href="https://discord.gg/36GnR2bp9F"
+		target="_blank"
+		rel="noreferrer"
+		class="btn variant-filled-tertiary w-full"
 	>
-		<source src="/video/puck_cut_sm.mp4" type="video/mp4" />
-	</video>
-	<div class="backdrop-blur-sm variant-soft-surface m-10 p-12 space-y-6 rounded-lg">
-		<p class="h1 text-6xl">Quit playing games.</p>
-		<p>Or&nbsp;don't. We're&nbsp;a&nbsp;game&nbsp;studio, not&nbsp;a&nbsp;cop.</p>
-		<button class="btn btn-primary variant-filled-primary">Do something about it</button>
-	</div>
-</section>
+		<DiscordIcon />
+		<span class="px-1">Join us on Discord </span>
+	</a>
+</VideoHero>
 
-<!-- <Hero>
-	<p class="h1 text-8xl">DAMN!</p>
-	<p>There are cats in the background for some reason.</p>
-	<button class="btn btn-primary variant-filled">Do something about it</button>
-</Hero> -->
+<div
+	in:fade={{ duration: 300, easing: quadIn, delay: 400 }}
+	out:fade={{ duration: 300, easing: quadOut }}
+>
+	<div class="container mx-auto lg:w-1/2">
+		<hr class="mx-6 lg:mx-0 my-10" />
+
+		<section class="grid lg:grid-cols-2 gap-6 mx-4 lg:mx-0">
+			<a href={data.latestPost.path}>
+				<PostCard post={data.latestPost} />
+			</a>
+			<a href={data.latestSketch.path}>
+				<SketchCard sketch={data.latestSketch} />
+			</a>
+		</section>
+	</div>
+</div>

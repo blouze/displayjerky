@@ -19,18 +19,39 @@ body {
 	font-weight: normal;
 }
 
+@font-face {
+	font-family: 'Frikativ';
+	src: url('/fonts/Frikativ.ttf');
+}
+
 /* NOTE: set your target theme name (ex: skeleton, wintry, modern, etc) */
 
-:root [data-theme='wintry'] {
+:root [data-theme='hamlindigo'] {
 	--theme-font-family-base: 'Mukta', sans-serif;
-	--theme-font-family-heading: 'Patua One', sans-serif;
-	
-	h1, h2, h3, h4, h5, h6 {
-		@apply font-normal;
-	}
+	--theme-font-family-heading: 'Patua One', cursive;
+
+	--theme-rounded-base: 6px;
+	--theme-rounded-container: 4px;
 	
 	nav {
 		@apply font-heading-token;
-		@apply uppercase;
+	}
+}
+
+article {
+	& > p {
+		&:first-of-type {
+				&:first-letter {
+					font-family: "Frikativ", sans-serif;
+					font-weight: normal;
+					font-size : 14rem;
+					float: left;
+					margin: 0.04em -0.1em -0.05em 0;
+					line-height: 0.65;
+					padding: 0.1em 0.1em 0 0;
+				}
+			}
+
+			margin-bottom: 1.6rem;
 	}
 }

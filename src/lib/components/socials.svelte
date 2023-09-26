@@ -15,7 +15,7 @@
 <div class="flex flex-col lg:flex-row lg:space-x-2">
 	{#each links as { label, icon, href }}
 		<a {href} target="_blank" rel="noreferrer" class="flex space-x-4 py-1">
-			<div class="btn-icon btn-icon-sm variant-ghost-surface">
+			<div class="btn-icon btn-icon-sm">
 				<svelte:component this={icon} />
 			</div>
 			<span class="lg:hidden self-center">{label}</span>

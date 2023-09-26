@@ -1,7 +1,8 @@
 ---
-title: I won a game jam and told nobody about it.¯\_(ツ)_/¯
-description: Why am I like this...
-img: cat.jpeg
+title: I won a game jam and told nobody about it.
+description: Why am I like this... ¯\_(ツ)_/¯
+date: 2022-07-19
+img: /video/moa_poster.jpg
 ---
 
 <script>

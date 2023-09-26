@@ -24,6 +24,7 @@
 	import Navigation from '$components/navigation.svelte';
 	import Footer from '$components/footer.svelte';
 	import Hamburger from '$components/hamburger.svelte';
+	import NewsletterForm from '$components/newsletter_form.svelte';
 	import Socials from '$components/socials.svelte';
 	import SidebarNavigation from '$components/sidebar_navigation.svelte';
 	import Analytics from '$components/analytics.svelte';
@@ -61,22 +62,20 @@
 </script>
 
 <!-- App Shell -->
-<AppShell slotSidebarLeft="w-0 lg:w-64">
+<AppShell slotSidebarLeft="w-0 lg:w-64" regionPage="scroll-smooth">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar>
+		<AppBar regionRowMain="container mx-auto">
 			<svelte:fragment slot="lead">
 				<a href="/">
-					<strong class="text-xl uppercase">
-						<img src="/img/logo_white.png" alt="DisplayJerky" class="hidden dark:block h-10" />
-						<img src="/img/logo_black.png" alt="DisplayJerky" class="block dark:hidden h-10" />
-					</strong>
+					<img src="/img/logo_white.png" alt="DisplayJerky" class="hidden dark:block h-10" />
+					<img src="/img/logo_black.png" alt="DisplayJerky" class="block dark:hidden h-10" />
 				</a>
 			</svelte:fragment>
 			<Navigation />
 			<svelte:fragment slot="trail">
 				<Hamburger on:click={() => drawerStore.open({})} />
-				<div class="hidden lg:flex items-baseline space-x-4">
+				<div class="hidden lg:flex items-center space-x-6">
 					<Socials />
 					<LightSwitch />
 				</div>
@@ -91,18 +90,42 @@
 	<!-- Page Route Content -->
 	{#key pathname}
 		<div
-			class="min-h-full"
-			in:fade|local={{ duration: 300, easing: quadIn, delay: 400 }}
-			out:fade|local={{ duration: 300, easing: quadOut }}
+			in:fade={{ duration: 300, easing: quadIn, delay: 400 }}
+			out:fade={{ duration: 300, easing: quadOut }}
 		>
 			<slot />
 		</div>
 	{/key}
-	<Footer />
+
+	<NewsletterForm />
+
+	<Footer on:privacy={gdprBanner.show} />
 </AppShell>
 
-<GdprBanner cookieName="gdpr" bind:this={gdprBanner} on:analytics={initAnalytics} />
+<GdprBanner
+	cookieName="gdpr"
+	bind:this={gdprBanner}
+	on:analytics={initAnalytics}
+	showEditIcon={false}
+/>
 
 {#if cookie_consent}
 	<Analytics />
 {/if}
+
+<svelte:head>
+	<link
+		rel="preload"
+		href="/fonts/Mukta-Regular.ttf"
+		as="font"
+		type="font/ttf"
+		crossorigin="true"
+	/>
+	<link
+		rel="preload"
+		href="/fonts/PatuaOne-Regular.ttf"
+		as="font"
+		type="font/ttf"
+		crossorigin="true"
+	/>
+</svelte:head>

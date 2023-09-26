@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { links } from '../store';
-	import { getDrawerStore } from '@skeletonlabs/skeleton';
+	import { LightSwitch, getDrawerStore } from '@skeletonlabs/skeleton';
 
 	const drawerStore = getDrawerStore();
 
@@ -9,10 +9,14 @@
 		href === $page.url.pathname ? '!bg-primary-active-token' : '';
 </script>
 
-<div class="h-full flex flex-col justify-around p-6 space-y-4">
-	<a href="/" on:click={() => drawerStore.close()} class="block">
-		<img src="/img/logo_white.png" alt="DisplayJerky" class="h-10 m-4" />
-	</a>
+<div class="flex flex-col h-full">
+	<div class="flex justify-between items-center p-4">
+		<a href="/" on:click={() => drawerStore.close()} class="block">
+			<img src="/img/logo_white.png" alt="DisplayJerky" class="hidden dark:block h-10" />
+			<img src="/img/logo_black.png" alt="DisplayJerky" class="block dark:hidden h-10" />
+		</a>
+		<LightSwitch />
+	</div>
 	<hr />
 	<nav class="list-nav h-full">
 		<ul>
